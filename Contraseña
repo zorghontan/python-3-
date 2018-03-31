@@ -1,0 +1,15 @@
+import getpass
+
+Name = input("Introduce nombre de usuario: ")
+Password = getpass.getpass(prompt = "Introduce la contraseña: ", stream =None)
+
+while Name != "Camilo" or Name != "camilo" and Password != "123":
+    if Name == "Camilo" or Name == "camilo" and Password == "123":
+        print("\n\tDatos correctos")
+        print("Ingresando al programa")
+        break
+    else:
+        print("\nContraseña o nombre de usuario incorrecto")
+        print("\nReintentar contraseña y nombre de usuario\n")
+        Name = input("Introduce nombre de usuario: ")
+        Password = getpass.getpass("\nIntroduce la contraseña: ")
